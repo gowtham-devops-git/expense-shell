@@ -71,6 +71,7 @@ VALIDATE $? "Installing dependencies"
 
 cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service
 
+
 dnf install mysql -y &>>$LOG_FILE_NAME
 VALIDATE $? "Installing MySQL Client"
 
